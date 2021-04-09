@@ -12,7 +12,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+
+    <div id="app_Vue">
+        <!-- <h1>Generatore di email random tramite <span>api</span> </h1>
+        <label for="numero_email"></label>
+        <input v-model="numero_email" id = "numero_email" type="text" placeholder="inserisci un numero"> -->
+        <ol>
+            <li v-for ="email in email_list">
+                <!-- {{getEmail(numero_email)}} -->
+                {{email}}
+            </li>
+        </ol>
+    </div>
 
     <!-- File JavaScript da mettere a fine HTML-->
     <script src="script.js" charset="utf-8"></script> 
